@@ -36,6 +36,7 @@ function Decks() {
       );
 
       history.push("/");
+      event.preventDefault();
     }
   };
 
