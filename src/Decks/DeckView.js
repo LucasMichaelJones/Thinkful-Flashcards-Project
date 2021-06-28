@@ -25,6 +25,7 @@ function DeckView({ handleDelete }) {
     if (window.confirm("Do you really want to delete this card?")) {
       await deleteCard(id);
       history.go(0);
+      event.preventDefault();
     }
   };
 
